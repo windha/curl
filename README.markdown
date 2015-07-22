@@ -2,6 +2,8 @@
 
 A basic CURL wrapper for PHP (see [http://php.net/curl](http://php.net/curl) for more information about the libcurl extension for PHP)
 
+20150722 fix bug
+上传文件时候传递变量的bug,所以fork了这个分支
 
 ## Installation
 
