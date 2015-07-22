@@ -168,7 +168,11 @@ class Curl {
     function request($method, $url, $vars = array()) {
         $this->error = '';
         $this->request = curl_init();
-        if (is_array($vars)) $vars = http_build_query($vars, '', '&');
+        //fix upload_file_var_value "@path"
+        if (is_array($vars)){
+            //if
+            $vars = http_build_query($vars, '', '&');
+        }
         
         $this->set_request_method($method);
         $this->set_request_options($url, $vars);
