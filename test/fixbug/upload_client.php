@@ -10,7 +10,7 @@ $data_arr = array(
     'my_file'=>'@'.$destpath,
 );
 
-$url = "http://139.129.15.187:8080/upload_server.php";
+$url = "http://139.129.xx.xxx:8080/upload_server.php";
 $response = $curlobj->post($url,$data_arr);
 var_dump($response);
 

@@ -11,7 +11,7 @@ $data_arr = array(
     'var3'=>'world',
 );
 
-$url = "http://139.129.15.187:8080/normal_post_server.php";
+$url = "http://139.129.xx.xx:8080/normal_post_server.php";
 $response = $curlobj->post($url,$data_arr);
 var_dump($response);
 
